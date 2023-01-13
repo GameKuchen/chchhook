@@ -28,7 +28,7 @@ setInterval(function() {
             const json = JSON.parse(body);
             if (currentStatus !== json.state.open) {
                 currentStatus = json.state.open;
-                hook.send(`<@286015596875874305> ChCh ist jetzt ${currentStatusRead(currentStatus)}`);
+                hook.send(`ChCh ist jetzt ${currentStatusRead(currentStatus)}`);
                 console.log(json.state.open);
             }
         })
